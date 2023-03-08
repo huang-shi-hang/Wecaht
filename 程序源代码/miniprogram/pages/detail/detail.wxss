@@ -1,0 +1,36 @@
+/* pages/detail/detail.wxss */
+/*顶端展示图片样式*/
+image{
+    width: 750rpx;
+}
+/*按钮外层 view*/
+view{
+    padding: 0 50rpx;
+}
+/*按钮样式*/
+button{
+    margin: 10rpx;
+}
+.tool{
+    height: 64rpx;
+    text-align: center;
+    line-height: 64rpx;
+    margin: 20rpx 28rpx 20rpx 0;
+  }
+
+.tool-item{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 0rpx;
+  }
+
+.tool-item image{
+    height: 50rpx;
+    width: 50rpx;
+    vertical-align: -3px;
+    margin-right: -4rpx;
+  }
+
+.comment image{
+    transform: scale(.85);
+  }

@@ -1,0 +1,15 @@
+
+<view class="container">
+<button class="bt_connect1" hover-class="hover-class-1"  size="mini" bindtap="goToAdd" open-type="getUserInfo" bindgetuserinfo="getUserInfo" >上传</button>
+
+<button class="bt_connect2" hover-class="hover-class-1" size="mini" open-type="getUserInfo" bindgetuserinfo="getUserInfo" bindtap="goTocollect">收藏</button>
+
+<button class="bt_connect3" hover-class="hover-class-1"  size="mini" bindtap="goTohomepage" open-type="getUserInfo" bindgetuserinfo="getUserInfo">我的</button>
+
+<button class="bt_connect4" hover-class="hover-class-1" size="mini" bindtap="goToindex">圈子</button>
+
+<image class="backimage" src="https://6d79-mycloud-4gpztuype24a1268-1308136807.tcb.qcloud.la/images/%E6%AD%BC20.jpg?sign=9d2697a0a2dad6437e2576e2185a04f0&t=1641569434" mode='widthFix'></image>
+<image class="logimage" src="https://6d79-mycloud-4gpztuype24a1268-1308136807.tcb.qcloud.la/images/%E5%B7%A5%E5%A4%A7.png?sign=f0f657e79833fc2530d8a3ca7b665e36&t=1641571170"></image>
+</view>
+
+

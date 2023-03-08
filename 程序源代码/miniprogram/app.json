@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/homepage/homepage",
+    "pages/detail/detail",
+    "pages/add/add",
+    "pages/collect/collect"
+  ],
+  "window": {
+    "backgroundColor": "#2267b1",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2267b1",
+    "navigationBarTitleText": "NWPU四季",
+    "navigationBarTextStyle": "white",
+    "navigationStyle":"default"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

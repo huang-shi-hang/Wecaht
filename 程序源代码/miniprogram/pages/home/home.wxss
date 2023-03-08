@@ -1,0 +1,86 @@
+/* pages/home/home.wxss */
+/*1181 750*/
+/*1124*/
+.container {
+   position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0cm;
+  }
+.backimage{
+  height: 100%;
+  width: 100%;
+}
+  .bt_connect1{
+    width: 200rpx;
+    height: 70rpx;
+    color: #6699FF;
+    border: 3rpx solid #6699FF;
+    border-radius: 80rpx;
+    font-size: 35rpx;
+    margin-top: 40rpx;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.5cm;
+    left: 0.5cm;
+  }
+  .bt_connect2{
+    width: 200rpx;
+    height: 70rpx;
+    color: #6699FF;
+    border: 3rpx solid #6699FF;
+    border-radius: 80rpx;
+    font-size: 35rpx;
+    margin-top: 40rpx;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.5cm;
+    left: 3cm;
+  }
+  .bt_connect3{
+    width: 200rpx;
+    height: 70rpx;
+    color: #6699FF;
+    border: 3rpx solid #6699FF;
+    border-radius: 80rpx;
+    font-size: 35rpx;
+    margin-top: 40rpx;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.5cm;
+    left: 6cm;
+  }
+  .bt_connect4{
+    width: 200rpx;
+    height: 70rpx;
+    color: #6699FF;
+    border: 3rpx solid #6699FF;
+    border-radius: 80rpx;
+    font-size: 35rpx;
+    margin-top: 40rpx;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.5cm;
+    right: 0.5cm;
+  }
+  /* 按钮的点击效果 */
+  .hover-class-1 {
+    top: 3rpx;
+    background-color: #e7f5ff;
+  }
+
+  .logimage{
+    width: 300rpx;
+    height: 70rpx;
+    position: fixed;
+    top:0.5cm;
+    left: 0.5cm;
+  }

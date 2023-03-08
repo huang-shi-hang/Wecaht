@@ -1,0 +1,31 @@
+<!--pages/homepage/homepage.wxml-->
+<view class='container'>
+    <!--头像和昵称-->
+    <view class='avatarBox'>
+        <image src='{{photoList[0].avatarUrl}}'></image>
+        <text>{{photoList[0].nickName}}的个人界面</text>
+    </view>
+
+    <!--卡片-->
+    <view class='card' wx:for = '{{photoList}}' wx:key="photo{{index}}">
+        <!--卡片页眉-->
+        <view class = 'card-head'>
+            <image class = 'avatar' src='{{item.avatarUrl}}'mode='widthFix'></image>
+            <view class = 'title'>
+                <text class = "nickname">{{item.nickName}}</text>
+                <text class = 'address'>{{item.province}}, {{item.country}}</text>
+            </view>
+        </view>
+        <!--卡片主体-->
+        <view class = 'card-body'>
+        <navigator url="../detail/detail?id={{item._id}}">
+            <image src='{{item.photoUrl}}'mode='widthFix'></image>
+        </navigator>
+        </view>
+
+        <!--卡片页脚-->
+        <view class = 'card-foot'>
+            <text>{{item.addDate}}</text>
+        </view>
+    </view>
+</view>

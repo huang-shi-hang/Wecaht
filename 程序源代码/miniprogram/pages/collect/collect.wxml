@@ -1,0 +1,43 @@
+<!--pages/collect/collect.wxml-->
+<!-- <view class = 'container'>
+
+        <text>我的收藏</text>
+
+        <view>
+        <block wx:for="{{historyPhotos}}" wx:key="history{{index}}">
+            <image src='{{item.photoUrl}}'></image>
+        </block>
+        </view>
+</view> -->
+
+<view class='container'>
+    <text>我的收藏</text>
+    <view  wx:for = '{{historyPhotos}}' wx:key="history{{index}}">
+  <!--卡片-->
+  <view class='card' wx:for = '{{item.photolist}}'>
+    <!--卡片页眉-->
+    <view class='card-head'>
+    <navigator url = '../homepage/homepage?id={{item._openid}}'>
+    <image class='avatar' src='{{item.avatarUrl}}' mode = 'widthFix'></image>
+    </navigator>
+    <view class='title'>
+      <text class='nickName'>{{item.nickName}}</text>
+      <text class='address'>{{item.province}},{{item.country}}</text>
+    </view>
+    </view>
+
+    <!--卡片主体-->
+    <view class='card-body'>
+    <navigator url = '../detail/detail?id={{item._id}}'>
+      <image src = '{{item.photoUrl}}' mode = 'widthFix'></image>
+    </navigator>
+    </view>
+
+    <!--卡片页脚-->
+    <view class='card-foot'>
+      <text>{{item.addDate}}</text>
+    </view>
+    </view>
+  </view>
+</view>
+

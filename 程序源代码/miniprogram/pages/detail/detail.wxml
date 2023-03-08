@@ -1,0 +1,38 @@
+<!--pages/detail/detail.wxml-->
+<!--顶端图片展示-->
+<image src='{{photo.photoUrl}}' mode='widthFix' catchtap="previewPhoto"></image>
+
+<!--按钮区域-->
+<!-- <view>
+    <button type = 'primary'plain bindtap="downloadPhoto">下载到本地</button>
+    <button type = 'primary'plain open-type="share">分享给好友</button>
+    <button type = 'primary'plain bindtap="previewPhoto">全屏预览</button>
+</view> -->
+
+<!--评论，收藏, 下载, 转发-->
+<view class="tool">
+   
+  <view class="tool-item" catchtap='like'>
+    <image wx:if="{{likestatus}}" src="cloud://mycloud-4gpztuype24a1268.6d79-mycloud-4gpztuype24a1268-1308136807/images/love.png"></image>
+    <image wx:else src="cloud://mycloud-4gpztuype24a1268.6d79-mycloud-4gpztuype24a1268-1308136807/images/爱心.png"></image>
+    <text>{{newupnum}}</text>
+   </view>
+   <view class="tool-item" catchtap='collect'>
+   <image wx:if="{{collectstatus}}"  src="cloud://mycloud-4gpztuype24a1268.6d79-mycloud-4gpztuype24a1268-1308136807/images/collect.png"></image>
+   <image wx:else src="cloud://mycloud-4gpztuype24a1268.6d79-mycloud-4gpztuype24a1268-1308136807/images/收藏.png"></image>
+    <text>{{newcollectnum}}</text>
+    </view>
+
+    <view class="tool-item comment" catchtap='downloadPhoto'>
+    <image  src="cloud://mycloud-4gpztuype24a1268.6d79-mycloud-4gpztuype24a1268-1308136807/images/下载.png"></image>
+    <text>{{newdownloadnum}}</text>
+    </view>
+
+    <!-- <view class="tool-item comment">
+    <image  src="cloud://mycloud-4gpztuype24a1268.6d79-mycloud-4gpztuype24a1268-1308136807/images/分享.png">
+    </image>
+    <text>{{newsharenum}}</text>
+    </view>    -->
+</view>
+
+<button type = 'primary' open-type="share">分享给好友</button>
